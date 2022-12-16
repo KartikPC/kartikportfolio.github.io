@@ -18,9 +18,11 @@
     border-radius: 100%;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+
 nav li{
     display: inline-block;
 }
+
 nav li a{
     font-size: 0.9rem;
     margin: 0rem 2rem;
@@ -78,11 +80,15 @@ nav li a:hover{
 
 .call{
     background-color: white;
-    border: none;
     color: black;
     padding: 1.1rem 2.5rem;
     border-radius: 0.5rem;
     cursor: pointer;
+    border: 1px solid white;
+}
+.call:hover{
+    color: white;
+    background-color: rgb(100, 100, 100);
 }
 .whatsapp{
     background-color: #1162ff;
@@ -120,14 +126,25 @@ nav li a:hover{
 .whatsapp:hover{
     background-color: #0e40a5;
 }
+#burger{
+    display: none;
+}
 @media screen and (max-width: 1300px)
  {
     .main-element{
         padding: 0rem 3rem;
     }
 }
+
+
 @media screen and (max-width: 978px)
  {
+    .container{
+        padding: 0.5rem 0rem;
+        flex-direction: column;
+        height: 70%;
+        justify-items: center;
+    }
     .main-element{
         flex-direction: column;
     }
@@ -136,4 +153,29 @@ nav li a:hover{
         justify-content: center;
         background-color: #0f0f0f;
     }
+    #profile-pic{
+        width:20rem ;
+    }
+    
+    nav li{
+        display: block;
+        height: 3rem;
+        align-self: center;
+        }
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #burger{
+        display: block;
+    }
+    #km-logo{
+        margin: 1.5rem;
+    }
+    #contact-btn{
+    margin-right:2rem ;
+    }
+    
 }
