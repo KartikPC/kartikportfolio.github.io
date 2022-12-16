@@ -11,13 +11,14 @@
 <body>
     <div class="container">
         <img id="km-logo" src="./img/KM_JPG (1).png" alt="">
-        <nav class="res-nav">
+        <nav class="res-nav active" id="nav-links">
             <li><a href="About">About</a></li>
             <li><a href="Process">Process</a></li>
             <li><a href="Work">Work</a></li>
             <li><a id="contact-btn" href="contact">Contact</a></li>
         </nav>
-        <img id="burger" src="./img/icons8-hamburger-menu-24.png" alt="">
+        <div id="burger"><img  src="./img/icons8-hamburger-menu-24.png" alt=""></div>
+        
     </div>
     <div class="main-element">
         <div class="left-side">
@@ -43,5 +44,13 @@
             </div>
         </div>
     </div>
+    <script>
+        const toggleButton = document.getElementById('burger');
+        const navLinks = document.getElementById('nav-links');
+        
+        toggleButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        })
+    </script>
 </body>
 </html>
